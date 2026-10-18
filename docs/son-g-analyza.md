@@ -5,7 +5,7 @@ Z son-g.com preberáme len mechaniky. Kód, grafika, texty ani branding sa nepre
 
 - **Dátum pozorovania:** 17.–18. 10. 2026
 - **Rozsah:** len verejne dostupné stránky a API ako neprihlásený hosť. Žiadny účet, platba ani prihlásenie.
-- **Stav:** čaká na schválenie zoznamu funkcií v časti [7](#7-návrh-funkcií-pre-songuess).
+- **Stav:** zoznam funkcií v časti [7](#7-návrh-funkcií-pre-songuess) schválený 18. 10. 2026, vrátane všetkých návrhov v 7.3.
 
 ## 0. Metóda a dôkazy
 
@@ -274,6 +274,7 @@ Hosť nemá účet ani reláciu. Kolo hosťa žije len v pamäti stránky a po o
 11. **Uloženie skóre** prihláseného hráča: história hier a najlepšie skóre.
 12. **Rebríček** najlepších hier, jeden riadok na hráča.
 13. **Responzívne rozloženie** pre mobil aj počítač.
+14. **Výber interpretov:** hráč si nájde jedného až piatich interpretov alebo skupín a piesne hry sa vyberú z ich najznámejších skladieb. Doplnené na žiadosť po schválení.
 
 Oproti son-g.com navrhujem dve zmeny v prospech férového rebríčka:
 
@@ -287,7 +288,7 @@ Oproti son-g.com navrhujem dve zmeny v prospech férového rebríčka:
 | Split Challenge | potrebuje delenie zvuku na stopy pomocou ML, čo je náročné na výkon |
 | Remix, Community, Výzva priateľovi | nie sú to hádacie singleplayer režimy |
 | Daily Challenge, séria dní, odmeny | denná logika navyše, dá sa doplniť neskôr |
-| obťažnosti a hľadanie interpreta | jedna úroveň a pevné kategórie stačia na prvú verziu |
+| obťažnosti | jedna úroveň stačí na prvú verziu |
 | kredity, platby, promo kódy | hra je zadarmo |
 | e-mail a heslo, obnova hesla, overenie e-mailu, Apple | dohodnuté len Google prihlásenie |
 | porovnanie s priemerom a percentil | potrebuje štatistiky, nie je nutné |
@@ -297,7 +298,7 @@ Oproti son-g.com navrhujem dve zmeny v prospech férového rebríčka:
 | viac jazykov, analytika, predbežné načítanie stránok | UI bude len po slovensky, bez sledovania |
 | animácie ako konfety a vinyl | stačí jednoduchá farebná spätná väzba |
 
-### 7.3 Rozhodnutia na schválenie
+### 7.3 Rozhodnutia (schválené)
 
 1. **Dĺžky ukážok:** navrhujem 1, 2, 4, 8 a 15 s. Son-g.com používa 0,1 až 4 s, čo je veľmi ťažké.
 2. **Počet piesní v hre:** navrhujem 5.
