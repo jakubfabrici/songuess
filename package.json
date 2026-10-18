@@ -1,0 +1,12 @@
+{
+  "name": "songuess",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "jose": "^6.1.0"
+  }
+}

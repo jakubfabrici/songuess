@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>songuess</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <a href="/" id="logo">songuess</a>
+    <div id="account"></div>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Uhádni pesničku</h1>
+      <p class="lead">Počúvaš čoraz dlhšiu ukážku a hádaš názov piesne. Jedna hra má 5 piesní.</p>
+
+      <h2>Vyber kategóriu</h2>
+      <div id="categories" class="grid"></div>
+
+      <h2>Alebo si vyber interpretov</h2>
+      <div class="search">
+        <input id="artist-input" placeholder="Hľadaj interpreta alebo skupinu" autocomplete="off">
+        <ul id="artist-list" class="suggestions" hidden></ul>
+      </div>
+      <div id="artist-chips" class="chips"></div>
+      <button id="artist-play" class="primary" disabled>Hrať s vybranými interpretmi</button>
+
+      <div id="history-box" hidden>
+        <h2>Moje hry</h2>
+        <ul id="history" class="rows"></ul>
+      </div>
+
+      <h2>Rebríček</h2>
+      <ol id="board" class="rows"></ol>
+    </section>
+
+    <section id="game" hidden>
+      <div class="game-head">
+        <span id="g-source"></span>
+        <span id="g-round"></span>
+      </div>
+      <div id="pips" class="pips"></div>
+      <div class="player">
+        <button id="play" class="play" aria-label="Prehrať">▶</button>
+        <div class="bar"><div id="bar-fill"></div></div>
+        <span id="g-points"></span>
+      </div>
+
+      <div id="playing">
+        <button id="hint"></button>
+        <form id="guess-form" class="search">
+          <input id="guess" placeholder="Názov piesne" autocomplete="off">
+          <button class="primary">Tipnúť</button>
+          <ul id="guess-list" class="suggestions" hidden></ul>
+        </form>
+        <p id="feedback" role="status"></p>
+        <button id="giveup" class="link">Vzdať sa a ukázať odpoveď</button>
+      </div>
+
+      <div id="reveal" hidden>
+        <div class="answer">
+          <img id="r-cover" alt="">
+          <div>
+            <strong id="r-title"></strong>
+            <span id="r-artist"></span>
+            <span id="r-score"></span>
+          </div>
+        </div>
+        <button id="next" class="primary"></button>
+      </div>
+    </section>
+
+    <section id="summary" hidden>
+      <h1 id="s-total"></h1>
+      <p id="s-info" class="lead"></p>
+      <ol id="s-songs" class="rows"></ol>
+      <button id="again" class="primary">Hrať znova</button>
+      <button id="to-home">Domov</button>
+    </section>
+  </main>
+
+  <audio id="audio" preload="none"></audio>
+  <script src="/app.js"></script>
+</body>
+</html>

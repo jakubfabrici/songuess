@@ -1,0 +1,13 @@
+services:
+  songuess:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+    volumes:
+      - data:/data
+    restart: unless-stopped
+
+volumes:
+  data:
